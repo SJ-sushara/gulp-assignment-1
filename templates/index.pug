@@ -1,6 +1,8 @@
 doctype html
 html
     head
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="/../vhosts/gulp-assignment-1/dist/style.css")
     body
         include includes/_header.pug
         
@@ -9,3 +11,7 @@ html
                 .container-row
                     .container-col-l
                         .banner
+                            img.img-responsive(src="/../vhosts/gulp-assignment-1/images/banner.jpg" alt="Banner image")
+        script(src="/../vhosts/gulp-assignment-1/dist/main.js")
+
+        include includes/_footer.pug

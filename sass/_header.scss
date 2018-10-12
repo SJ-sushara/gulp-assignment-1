@@ -1,0 +1,90 @@
+//header styles
+header {
+  //   height: 150px;
+  background-color: $bg-gray;
+  color: $gray;
+  padding: 20px 0px;
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  a {
+    color: $gray;
+  }
+  .navbar-logo {
+    width: 200px;
+    height: 50px;
+  }
+  .nav-menu-list {
+    margin: 0;
+    .nav-menu-list-item {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      list-style-type: none;
+      margin-right: 10px;
+    }
+  }
+}
+//desktop view
+@media screen and (min-width: 768px) {
+  .nav-menu-list {
+    .nav-menu-list-item {
+      display: inline-block;
+    }
+  }
+  #toggleIcon {
+    display: none;
+  }
+}
+//mobile view
+@media screen and (max-width: 767px) {
+  nav {
+    .nav-menu-list {
+      text-align: right;
+      text-align: right;
+      opacity: 1;
+      transition: all 0.3s ease 0.3s;
+      li {
+        padding: 10px;
+      }
+    }
+    .nav-menu {
+      position: absolute;
+      right: 0;
+      top: 90px;
+      background: $bg-gray;
+      width: 500px;
+      visibility: visible;
+      opacity: 1;
+      overflow-x: hidden;
+      transform: scaleX(1);
+      // transition: visibility 0s, opacity 0.5s, width 0.3s ease-in;
+      transition: all 0.3s ease-in;
+      transform-origin: right;
+      &.hidden {
+        // display:none;
+        visibility: hidden;
+        opacity: 0;
+        right: 0;
+        // width: 0px;
+        overflow-x: hidden;
+
+        transform: scaleX(0);
+        // transition: visibility 0.3s, opacity 0.5s, width 0s;
+        transition: all 0.3s ease-in;
+
+        .nav-menu-list {
+          opacity: 0;
+          transition: all 0.3s ease 0s;
+        }
+      }
+    }
+    .nav-menu-list {
+      .nav-menu-list-item {
+        list-style-type: none;
+      }
+    }
+  }
+}
