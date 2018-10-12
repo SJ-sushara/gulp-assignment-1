@@ -6,12 +6,40 @@ html
     body
         include includes/_header.pug
         
-        .header-banner
+        section.header-banner
             .container-l
                 .container-row
                     .container-col-l
                         .banner
                             img.img-responsive(src="/../vhosts/gulp-assignment-1/images/banner.jpg" alt="Banner image")
         script(src="/../vhosts/gulp-assignment-1/dist/main.js")
+
+        section.main-section
+            .container-l
+                .container-row
+                    .container-col-m-3
+                        .cards.bg-white
+                            .card-img-wrapper
+                                img.img-responsive(src="/../vhosts/gulp-assignment-1/images/service-icon-1.png" alt="Banner image")
+                            h2 Who we are
+                            p.main-paragraph
+                                | Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                | Id minima nesciunt possimus deserunt itaque quo laborum vero error dolorum eaque eos veniam reiciendis, sequi suscipit nostrum sunt maiores alias. Earum.
+                    .container-col-m-3
+                        .cards.bg-white
+                            .card-img-wrapper
+                                img.img-responsive(src="/../vhosts/gulp-assignment-1/images/service-icon-2.png" alt="Banner image")
+                            h2 Therapy areas
+                            p.main-paragraph
+                                | Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                | Id minima nesciunt possimus deserunt itaque quo laborum vero error dolorum eaque eos veniam reiciendis, sequi suscipit nostrum sunt maiores alias. Earum.
+                    .container-col-m-3
+                        .cards.bg-white
+                            .card-img-wrapper
+                                img.img-responsive(src="/../vhosts/gulp-assignment-1/images/service-icon-3.png" alt="Banner image")
+                            h2 Careers
+                            p.main-paragraph
+                                | Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                | Id minima nesciunt possimus deserunt itaque quo laborum vero error dolorum eaque eos veniam reiciendis, sequi suscipit nostrum sunt maiores alias. Earum.
 
         include includes/_footer.pug

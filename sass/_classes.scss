@@ -6,3 +6,36 @@
   height: auto;
   max-height: 100%;
 }
+.list-inline {
+  li {
+    display: inline-block;
+  }
+}
+.list-unstyled {
+  list-style-type: none;
+}
+
+.container-row {
+  display: flex;
+  justify-content: space-between;
+}
+.container-col-s-4 {
+  width: 25%;
+  padding: 0px 15px;
+}
+.container-col-m-3 {
+  width: 33.333%;
+  padding: 0px 15px;
+}
+.container-col-l {
+  width: 100%;
+  padding: 0px 15px;
+}
+
+//bg classes
+.bg-gray {
+  background-color: $dark-gray;
+}
+.bg-white {
+  background-color: $white;
+}
