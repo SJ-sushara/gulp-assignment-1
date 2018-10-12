@@ -15,3 +15,5 @@ nav .nav-menu.hidden{visibility:hidden;opacity:0;right:0;overflow-x:hidden;trans
 nav .nav-menu.hidden .nav-menu-list{opacity:0;transition:all .3s ease 0s}
 nav .nav-menu-list .nav-menu-list-item{list-style-type:none}}footer{color:#fff;text-align:center;line-height:1.5;padding:20px}
 .cards{text-align:center;padding:20px}.card-img-wrapper{width:100px;margin:0 auto}
+.header-banner{margin-bottom:30px}.header-banner .container-col-l{padding:0}.main-section{margin-bottom:30px}
+header{margin-bottom:30px}

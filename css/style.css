@@ -129,3 +129,14 @@ footer {
 .card-img-wrapper {
   width: 100px;
   margin: 0 auto; }
+
+.header-banner {
+  margin-bottom: 30px; }
+  .header-banner .container-col-l {
+    padding: 0px; }
+
+.main-section {
+  margin-bottom: 30px; }
+
+header {
+  margin-bottom: 30px; }
