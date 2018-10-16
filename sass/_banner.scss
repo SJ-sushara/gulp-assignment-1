@@ -2,9 +2,8 @@
 
 .banner {
   height: 500px;
-  position: relative;
-  // background-color: $black;
-  // width: 100%;
+  // position: relative;
+  background-color: $black;
   img {
     object-fit: cover;
     min-height: 100%;
@@ -26,11 +25,8 @@
   }
 }
 
-.header-banner {
-  background-color: $black;
-  .container-col-l {
-    width: 100%;
-  }
+.banner-section {
+  position: relative;
 }
 //styles for banner parallax effect
 .parallax {
