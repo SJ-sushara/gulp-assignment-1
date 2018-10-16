@@ -70,8 +70,7 @@ body {
 
 .banner {
   height: 500px;
-  position: relative;
-  background-color: #000000; }
+  position: relative; }
   .banner img {
     object-fit: cover;
     min-height: 100%;
@@ -89,6 +88,16 @@ body {
         .banner .banner-text h1 {
           font-size: 60px; } }
 
+.header-banner {
+  background-color: #000000; }
+  .header-banner .container-col-l {
+    width: 100%; }
+
+.parallax {
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 header {
   background-color: #f9f9f9;
   color: #777;
@@ -103,7 +112,7 @@ header {
     color: #777;
     font-weight: bold; }
   header .navbar-logo {
-    width: 200px;
+    width: 250px;
     display: block; }
   header .nav-menu-list {
     margin: 0; }
