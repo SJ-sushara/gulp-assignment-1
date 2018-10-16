@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     padding: 10px;
     display: flex;
+    align-items: center;
     // @include mq("md") {
     //   display: flex;
     // }
@@ -19,7 +20,6 @@ header {
   }
   .navbar-logo {
     width: 200px;
-    height: 50px;
     display: block;
   }
   .nav-menu-list {

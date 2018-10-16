@@ -38,6 +38,14 @@ gulp.task("compress", function(cb) {
 // fonts
 gulp.task("fonts", () => gulp.src("./fonts/**/*.*").pipe(gulp.dest("/fonts/")));
 
+// var streamqueue = require("streamqueue");
+
+// var queue = streamqueue(
+//   Fs.createReadStream("input.txt"),
+//   Fs.createReadStream("input2.txt"),
+//   Fs.createReadStream("input3.txt")
+// ).pipe(process.stdout);
+
 gulp.task("run", [("sass", "css", "compress", "fonts")]);
 
 gulp.task("watch", function() {
