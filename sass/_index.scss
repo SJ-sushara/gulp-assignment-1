@@ -16,6 +16,11 @@
 }
 .main-section {
   margin-bottom: 30px;
+  .container-col-m-3 {
+    @include mq("md", "max") {
+      margin-bottom: 30px;
+    }
+  }
 }
 header {
   margin-bottom: 30px;

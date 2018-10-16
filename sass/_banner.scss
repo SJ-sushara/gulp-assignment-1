@@ -2,7 +2,25 @@
 
 .banner {
   height: 500px;
+  position: relative;
+  background-color: $black;
   img {
     object-fit: cover;
+    min-height: 100%;
+    opacity: 0.5;
+  }
+  .banner-text {
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    color: $white;
+    text-transform: uppercase;
+
+    h1 {
+      font-size: 40px;
+      @include mq("md") {
+        font-size: 60px;
+      }
+    }
   }
 }

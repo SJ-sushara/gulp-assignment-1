@@ -6,9 +6,12 @@ header {
   padding: 20px 0px;
   nav {
     position: relative;
-    display: flex;
     justify-content: space-between;
     padding: 10px;
+    display: flex;
+    // @include mq("md") {
+    //   display: flex;
+    // }
   }
   a {
     color: $gray;
@@ -16,6 +19,7 @@ header {
   .navbar-logo {
     width: 200px;
     height: 50px;
+    display: block;
   }
   .nav-menu-list {
     margin: 0;
@@ -29,6 +33,9 @@ header {
 }
 //desktop view
 @media screen and (min-width: 768px) {
+  // nav {
+  //   display: flex;
+  // }
   .nav-menu-list {
     .nav-menu-list-item {
       display: inline-block;

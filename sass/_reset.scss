@@ -4,8 +4,9 @@ html,
 body {
   font-family: "GothamLight", Helvetica, Arial, sans-serif;
   padding: 0;
-  margin: 0;
-  max-width: 1400px;
+  margin: 0 auto;
+  // max-width: 1400px;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
