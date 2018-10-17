@@ -77,12 +77,11 @@ body {
   height: 600px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  position: relative; }
+  background-size: cover; }
   .parallax_section .parallax_text {
     font-size: 60px;
     position: absolute;
-    top: 40%;
+    top: 60%;
     margin-top: -15px;
     left: 0;
     font-weight: 600;
