@@ -19,6 +19,17 @@ function navbarToggle() {
 navbarToggle();
 window.onresize = navbarToggle;
 
+//toggle icon animation
+
+(function() {
+  var toggle = document.querySelector(".nav-toggle");
+
+  toggle.addEventListener("click", function(e) {
+    this.classList.toggle("opened");
+    console.log("dsadajd");
+  });
+})();
+
 //script for parallax effect on banner
 
 // var parallax = document.querySelector(".parallax");
