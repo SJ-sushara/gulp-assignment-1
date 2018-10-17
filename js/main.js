@@ -61,3 +61,17 @@ window.onresize = navbarToggle;
 //     }
 //   });
 // });
+
+//on scroll fade in divs
+var parallax = document.querySelector(".parallax_section");
+var cardClasses = document.getElementsByClassName("cards").classList;
+window.addEventListener("scroll", function() {
+  var scrolledHeight = window.pageYOffset;
+  limit = parallax.offsetTop + parallax.offsetHeight;
+
+  if (scrolledHeight > parallax.offsetTop && scrolledHeight <= limit) {
+    cardClasses.add("tesstts");
+  } else {
+    cardClasses.remove("tesstts");
+  }
+});
