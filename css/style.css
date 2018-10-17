@@ -73,32 +73,41 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.banner {
-  height: 500px; }
-  .banner img {
-    object-fit: cover;
-    min-height: 100%;
-    opacity: 0.5; }
-  .banner .banner-text {
-    position: absolute;
-    top: 30%;
-    right: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: right; }
-    .banner .banner-text h1 {
-      font-size: 40px; }
-      @media only screen and (min-width: 768px) {
-        .banner .banner-text h1 {
-          font-size: 60px; } }
-
-.banner-section {
-  position: relative; }
-
-.parallax {
-  background-image: url("../images/banner.jpg");
+.parallax_section {
+  height: 600px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative; }
+  .parallax_section .parallax_text {
+    font-size: 60px;
+    position: absolute;
+    top: 40%;
+    margin-top: -15px;
+    left: 0;
+    font-weight: 600;
+    color: #fff; }
+
+.parallax_image_first {
+  background-image: url("../images/banner.jpg"); }
+
+.banner_text {
+  text-align: right;
+  right: 20px; }
+  .banner_text h1,
+  .banner_text h2 {
+    text-transform: uppercase; }
+  .banner_text h1 {
+    font-size: 40px; }
+    @media only screen and (min-width: 768px) {
+      .banner_text h1 {
+        font-size: 60px; } }
+  .banner_text h2 {
+    font-size: 24px; }
+    @media only screen and (min-width: 768px) {
+      .banner_text h2 {
+        font-size: 36px; } }
 
 header {
   background-color: #f9f9f9;

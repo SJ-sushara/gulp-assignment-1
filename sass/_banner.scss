@@ -1,36 +1,22 @@
 //banner styles
 
-.banner {
-  height: 500px;
-  // position: relative;
-  // background-color: $black;
-  img {
-    object-fit: cover;
-    min-height: 100%;
-    opacity: 0.5;
-  }
-  .banner-text {
-    position: absolute;
-    top: 30%;
-    right: 20px;
-    color: $white;
+.banner_text {
+  text-align: right;
+  right: 20px;
+  h1,
+  h2 {
     text-transform: uppercase;
-    text-align: right;
-    h1 {
-      font-size: 40px;
-      @include mq("md") {
-        font-size: 60px;
-      }
+  }
+  h1 {
+    font-size: 40px;
+    @include mq("md") {
+      font-size: 60px;
     }
   }
-}
-
-.banner-section {
-  position: relative;
-}
-//styles for banner parallax effect
-.parallax {
-  background-image: url("../images/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  h2 {
+    font-size: 24px;
+    @include mq("md") {
+      font-size: 36px;
+    }
+  }
 }
