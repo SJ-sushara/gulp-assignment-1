@@ -64,14 +64,19 @@ window.onresize = navbarToggle;
 
 //on scroll fade in divs
 var parallax = document.querySelector(".parallax_section");
-var cardClasses = document.getElementsByClassName("cards").classList;
-window.addEventListener("scroll", function() {
-  var scrolledHeight = window.pageYOffset;
-  limit = parallax.offsetTop + parallax.offsetHeight;
+var cardClasses = document.getElementById("cards").classList;
+var scrolledHeight = window.pageYOffset;
+var limit = parallax.offsetTop + parallax.offsetHeight;
 
+console.log(parallax.offsetTop);
+console.log(parallax.offsetHeight);
+
+window.addEventListener("scroll", function() {
+  console.log(scrolledHeight);
   if (scrolledHeight > parallax.offsetTop && scrolledHeight <= limit) {
-    cardClasses.add("tesstts");
+    console.log(scrolledHeight);
+    cardClasses.add("test");
   } else {
-    cardClasses.remove("tesstts");
+    cardClasses.remove("test");
   }
 });
